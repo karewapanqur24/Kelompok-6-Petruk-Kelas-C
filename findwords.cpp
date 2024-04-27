@@ -99,6 +99,8 @@ int main(){
     FindkeyWord(matrik, katakey, caribrp, 23, 23);
     return 0;
 }
+
+}
     
 
 
