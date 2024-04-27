@@ -72,7 +72,8 @@ int main(){
     for (int i=0; i<caribrp; i++){
         cin>>katakey[i];
     }
-    char matrik[m][m]={
+char matrik[m][m]= 
+    {
     {'A','A','F','L','K','H','P','F','S','S','U','F','I','C','I','C','L','E','S','G','N','N','H'},
     {'S','F','V','R','E','O','M','R','W','L','R','T','T','S','X','O','Q','Q','N','A','O','A','O'},
     {'Q','E','I','A','I','F','X','A','E','I','R','F','V','F','Y','S','X','I','M','I','N','J','I'},
@@ -97,11 +98,10 @@ int main(){
     {'B','F','R','E','E','Z','I','N','G','R','A','I','N','S','L','I','L','G','T','M','E','L','T'},
     {'H','Q','P','Y','L','W','H','F','M','N','F','F','U','F','P','S','W','X','N','U','M','M','V'}
     };
-    FindkeyWord(matrik, katakey, caribrp, 23, 23);
-    return 0;
+FindkeyWord(matrik, katakey, caribrp, 23, 23);
+return 0;
 }
 
-}
     
 
 
