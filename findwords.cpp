@@ -11,6 +11,26 @@ bool FindWord(char matrik[m][m], string kata, int baris, int kolom){
     for (int i = 0; i < baris; i++){
         for (int j = 0; j <= kolom-kata.length(); j++){
             string barisStr(matrik[i] + j, matrik[i] + j + kata.length());
+    for (char &c : barisStr)
+            {
+                if (c >= 'A' && c <= 'Z')
+                {
+                    c = c - 'A' + 'a';
+                }
+            }
+            if (barisStr == kata)
+                return true;
+        }
+    }
+    for (int i = 0; i <= baris - kata.length(); i++)
+    {
+        for (int j = 0; j < kolom; j++)
+        {
+            string kolomStr;
+            for (int k = i; k < i + kata.length(); k++)
+            {
+                kolomStr.push_back(matrik[k][j]);
+            }
         
 
 int main()
