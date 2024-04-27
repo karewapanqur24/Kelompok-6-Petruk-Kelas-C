@@ -64,6 +64,16 @@ if (diagStr==kata) return true;
     }
     return false;
 }
+void FindkeyWord(char matrik[m][m], const string katakey[], int caribrp, int baris, int kolom){
+    for (int i = 0; i < caribrp; i++){
+        bool ditemukan = FindWord(matrik, katakey[i], baris, kolom);
+        if (ditemukan){
+            cout << "Ada" << endl;
+        } else{
+            cout << "Tidak Ada" <<endl;
+        }
+    }
+}
             
 int main(){
     int caribrp;
