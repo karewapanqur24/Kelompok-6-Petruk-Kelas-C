@@ -39,6 +39,30 @@ bool FindWord(char matrik[m][m], string kata, int baris, int kolom){
             string diagStr;
             for (int k=0; k<kata.length(); k++){
                 diagStr.push_back(matrik[i+k][j+k]);
+for (char& c : diagStr){
+                if (c >= 'A' && c <= 'Z'){
+                    c=c-'A'+'a';
+                }
+            }
+            if (diagStr==kata) return true;
+        }
+    }
+    for (int i=kata.length()-1; i<baris; i++){
+        for (int j=0; j <= kolom-kata.length(); j++){
+            string diagStr;
+            for (int k=0; k<kata.length(); k++){
+                diagStr.push_back(matrik[i-k][j+k]);
+            }
+            for (char& c : diagStr){
+                if (c >= 'A' && c <= 'Z'){
+                    c=c-'A'+'a';
+                }
+            }
+if (diagStr==kata) return true;
+        }
+    }
+    return false;
+}
             
 int main(){
     int caribrp;
@@ -66,5 +90,15 @@ int main(){
     {'T','E','K','A','L','F','W','O','N','S','N','A','E','B','M','I','E','J','T','Z','N','T','G'},
     {'E','S','W','P','O','S','J','X','E','U','T','U','Y','O','Z','U','W','A','K','E','Z','H','M'},
     {'K','Z','U','H','B','P','E','Z','E','E','R','F','L','M','S','N','O','W','B','A','L','L','H'},
-
+    {'N','S','N','O','W','B','O','A','R','D','Y','T','V','W','Y','C','L','E','V','O','H','S','A'},
+    {'A','C','O','C','R','Q','L','G','Z','I','Y','C','H','O','D','R','A','Z','Z','I','L','B','I'},
+    {'L','B','V','K','K','W','A','N','Z','A','A','G','I','N','W','O','L','P','W','O','N','S','L'},
+    {'B','F','R','E','E','Z','I','N','G','R','A','I','N','S','L','I','L','G','T','M','E','L','T'},
+    {'H','Q','P','Y','L','W','H','F','M','N','F','F','U','F','P','S','W','X','N','U','M','M','V'}
+    };
+    FindkeyWord(matrik, katakey, caribrp, 23, 23);
+    return 0;
 }
+    
+
+
