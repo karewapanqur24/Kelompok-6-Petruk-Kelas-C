@@ -39,7 +39,8 @@ bool FindWord(char matrik[m][m], string kata, int baris, int kolom){
             string diagStr;
             for (int k=0; k<kata.length(); k++){
                 diagStr.push_back(matrik[i+k][j+k]);
-for (char& c : diagStr){
+                
+    for (char& c : diagStr){
                 if (c >= 'A' && c <= 'Z'){
                     c=c-'A'+'a';
                 }
