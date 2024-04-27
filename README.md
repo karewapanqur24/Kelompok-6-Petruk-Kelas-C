@@ -1,1 +1,2 @@
-Kelompok 6 Kelas C
+Kelas C
+Kelompok 6
