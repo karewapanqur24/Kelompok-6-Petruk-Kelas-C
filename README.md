@@ -1,5 +1,5 @@
-Pemrograman Terstruktur
-Tugas Vclass "Find Words"
+#Pemrograman Terstruktur
+#Tugas Vclass "Find Words"
 
 Kelas C
 Kelompok 6
